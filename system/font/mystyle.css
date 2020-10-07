@@ -1,0 +1,57 @@
+
+@import url(./font/font_face.css);
+
+body{
+	
+   font-family: 'Droid Arabic Kufi';
+   font-size:10pt;
+}
+
+h1,h3,h4{
+	      text-shadow:1px 1px #8f8f8f;
+}
+.screen_lock{
+ position:absolute;
+ z-index:99;	
+ width:100%;
+ margin:0px;
+ height:100%;
+}
+
+select .js-example-basic-single{
+   direction:rtl;
+}
+	
+select.form-control:not([size]):not([multiple]) {
+    height: auto;
+}
+
+h1{font-size: 30px;}
+h3{font-size: 22px;}
+h4{font-size: 18px;}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 979px){
+	
+}
+
+@media (max-width: 767px){
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+}
+
+
+@media (max-width: 480px){
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}}

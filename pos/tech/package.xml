@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.6.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>I18N_Arabic</name>
+ <uri>http://www.ar-php.org/</uri>
+ <summary>PHP Swiss-army knife for Arabic language</summary>
+ <description>Project providing a set of tools that enable Arabic website developers to serve professional search, present and process Arabic language contents in PHP.</description>
+ <lead>
+  <name>Khaled Al-Shamaa</name>
+  <user>arphp</user>
+  <email>khaled@ar-php.org</email>
+  <active>yes</active>
+ </lead>
+ <date>2013-01-19</date>
+ <time>20:50:47</time>
+ <version>
+  <release>3.6.0</release>
+  <api>3.6.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>This package ONLY contains the class files and documentation, not the  example code. Please refer to http://www.ar-php.org for those files.</notes>
+ <contents>
+  <dir name="/">
+<file md5sum="42eca1752793f621e4ca95afa06d8526" name="I18N/Arabic.php" role="php" />
+<file md5sum="02071b0d8849dafc8e42961050f36376" name="I18N/Arabic/AutoSummarize.php" role="php" />
+<file md5sum="1f3fe7720c8060981d171f633e474bb6" name="I18N/Arabic/Changes" role="data" />
+<file md5sum="9dcdda54e4c35ea28d86465da2b08077" name="I18N/Arabic/CharsetC.php" role="php" />
+<file md5sum="9b0f9ed6261332508d1024a90601cb0d" name="I18N/Arabic/CharsetD.php" role="php" />
+<file md5sum="2d0c76e5ed93590d2a6b3d97e1d4c7a9" name="I18N/Arabic/CompressStr.php" role="php" />
+<file md5sum="a421a7f39e67d9f5b4cbb1ef48810ba3" name="I18N/Arabic/Date.php" role="php" />
+<file md5sum="8ee76f4bbea968ca4bab9297618b352f" name="I18N/Arabic/Gender.php" role="php" />
+<file md5sum="d122bbc80ccc0beb34d657543bbfa676" name="I18N/Arabic/Glyphs.php" role="php" />
+<file md5sum="3c34afdc3adf82d2448f12715a255122" name="I18N/Arabic/GPL" role="data" />
+<file md5sum="6bbea5f34dba8d8cd435e5981b3ddf1b" name="I18N/Arabic/Identifier.php" role="php" />
+<file md5sum="ead7ff6f8704e10ae5a7eb88a7ebd99b" name="I18N/Arabic/KeySwap.php" role="php" />
+<file md5sum="8e3494bf8cf1967afd3b1016fbbe5bb0" name="I18N/Arabic/LGPL" role="data" />
+<file md5sum="38ecec96d665c028015aa5dbf8ce8a2b" name="I18N/Arabic/Mktime.php" role="php" />
+<file md5sum="af7c723d8fccbd132077abd0b031237b" name="I18N/Arabic/Normalise.php" role="php" />
+<file md5sum="c9a78f2364ab3415720dc50d2d08b0d1" name="I18N/Arabic/Numbers.php" role="php" />
+<file md5sum="f768ba1edd164dfba5427b7dcbb81076" name="I18N/Arabic/Query.php" role="php" />
+<file md5sum="1b0270ecf7b03d7cac28a55e42c5161d" name="I18N/Arabic/Salat.php" role="php" />
+<file md5sum="2ae95e0395d0ef606689163bbf0b11ff" name="I18N/Arabic/Soundex.php" role="php" />
+<file md5sum="b9a53b7175cdf5debc2282fa724b068e" name="I18N/Arabic/Standard.php" role="php" />
+<file md5sum="8c24536bba91e170edd50d5b8995abd2" name="I18N/Arabic/Stemmer.php" role="php" />
+<file md5sum="816a8cc74b3be967137de9056ceff445" name="I18N/Arabic/StrToTime.php" role="php" />
+<file md5sum="f087208558a4cdf30ec98562a3945007" name="I18N/Arabic/Transliteration.php" role="php" />
+<file md5sum="1ef81cb91afb9ae733a67454c988ea89" name="I18N/Arabic/WordTag.php" role="php" />
+<file md5sum="85799be6079c7d665f794c8123964978" name="I18N/Arabic/data/ar-extra-stopwords.txt" role="data" />
+<file md5sum="9cddddbbcbd78c4847042559a30c0c40" name="I18N/Arabic/data/ar-stopwords.txt" role="data" />
+<file md5sum="52e41e5d31da70eee7fc9570cb961aba" name="I18N/Arabic/data/arab_countries.xml" role="data" />
+<file md5sum="5ab2fc9483c03bb22973b20e9b51203b" name="I18N/Arabic/data/ArDate.xml" role="data" />
+<file md5sum="f5d26547ef4221f7059d674a754da155" name="I18N/Arabic/data/ArNumbers.xml" role="data" />
+<file md5sum="f4e79f2593320563f220e8a5df543af5" name="I18N/Arabic/data/ArQuery.xml" role="data" />
+<file md5sum="88a28b8b2ba379f25c53bea85a3f52a5" name="I18N/Arabic/data/ArSort.xml" role="data" />
+<file md5sum="b70b5bde2cd71548f9e335db7e207115" name="I18N/Arabic/data/ArSoundex.xml" role="data" />
+<file md5sum="77e964a39e3ee4a2dadd9e6ca280f03a" name="I18N/Arabic/data/ArStrToTime.xml" role="data" />
+<file md5sum="da2f089148225940cdfaa92a916587ce" name="I18N/Arabic/data/en-stopwords.txt" role="data" />
+<file md5sum="54c2ffd3de42ce257a69f02b15596d0d" name="I18N/Arabic/data/female.txt" role="data" />
+<file md5sum="f596933894d9194d75d1e0cd19d07f92" name="I18N/Arabic/data/important-words.txt" role="data" />
+<file md5sum="97be43a9a70f79f656479299e75f4d6c" name="I18N/Arabic/data/Transliteration.xml" role="data" />
+<file md5sum="07aa76c93f01a1ff226a09b5928d54c4" name="I18N/Arabic/data/um_alqoura.txt" role="data" />
+<file md5sum="5dc52700f7a84f078ac4258fff4b7146" name="I18N/Arabic/data/charset/arabizi.xml" role="data" />
+<file md5sum="90d998e64385bb5c7b30a98e63e75a9b" name="I18N/Arabic/data/charset/ArUnicode.constants.php" role="php" />
+<file md5sum="4c2aa4d3e8aa7e202c8d57143d3090a2" name="I18N/Arabic/data/charset/charset.src" role="data" />
+<file md5sum="8173485050e1218c7b912897ad9a1b7a" name="I18N/Arabic/data/charset/_bug.php" role="php" />
+<file md5sum="c8ec8dbf43d820b525d5da27c73ae90f" name="I18N/Arabic/data/charset/_html.php" role="php" />
+<file md5sum="4b80d35123396f4cafec0a247dbabf6c" name="I18N/Arabic/data/charset/_iso88596.php" role="php" />
+<file md5sum="64f64ae8f8c4d1b441ef530301fd81cf" name="I18N/Arabic/data/charset/_utf8.php" role="php" />
+<file md5sum="2046b99810f4d1c1e8cb8488d5dd181d" name="I18N/Arabic/data/charset/_windows1256.php" role="php" />
+<file md5sum="77075d5b78217c51a39220c5424e27f7" name="I18N/Arabic/Docs/classtrees_I18N_Arabic.html" role="doc" />
+<file md5sum="3a96bc8854416bd77c4dcca4ea690ea3" name="I18N/Arabic/Docs/elementindex.html" role="doc" />
+<file md5sum="03ead20e0e6d4ef12ba80a36d28019ce" name="I18N/Arabic/Docs/elementindex_I18N_Arabic.html" role="doc" />
+<file md5sum="7dc8ed69d858fd4f538cf39a3c279f8a" name="I18N/Arabic/Docs/index.html" role="doc" />
+<file md5sum="7dc8ed69d858fd4f538cf39a3c279f8a" name="I18N/Arabic/Docs/li_I18N_Arabic.html" role="doc" />
+<file md5sum="b2aa488d1de7e9e66308e47777c92f23" name="I18N/Arabic/Docs/ric_Changes.html" role="doc" />
+<file md5sum="b24d5acec91cad3678c295c2b5180951" name="I18N/Arabic/Docs/ric_GPL.html" role="doc" />
+<file md5sum="921818ac01c5a91fcd6b439db3280376" name="I18N/Arabic/Docs/ric_LGPL.html" role="doc" />
+<file md5sum="6ff40f48a600add74c32d153ff42506c" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__Arabic.php.html" role="doc" />
+<file md5sum="670fe3b432ffb48afb48bedb3a788312" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicAutoSummarize.php.html" role="doc" />
+<file md5sum="e515f8551ecd56e350f75fe296020c65" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicCharsetC.php.html" role="doc" />
+<file md5sum="ae38f59949a0f423502bd623ed8ab1a1" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicCharsetD.php.html" role="doc" />
+<file md5sum="730db7fe2bc3cc7356036e5093c22dd7" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicCompressStr.php.html" role="doc" />
+<file md5sum="9c5f99d824946859af02c9e8fa136b8b" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicDate.php.html" role="doc" />
+<file md5sum="31b624f2e963aa2b87819c6b00c6eb76" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicGender.php.html" role="doc" />
+<file md5sum="ec0e8bc55cd9fa3baa5b728e597047e7" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicGlyphs.php.html" role="doc" />
+<file md5sum="b7262db7050feca438f12d68013397c7" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicHiero.php.html" role="doc" />
+<file md5sum="4de93951f1ecc97d190920507deb91db" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicIdentifier.php.html" role="doc" />
+<file md5sum="27bca2455737f14182c16453b4d6b1a9" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicKeySwap.php.html" role="doc" />
+<file md5sum="1919f47701f73fe0b7f90fafd90aa47e" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicMktime.php.html" role="doc" />
+<file md5sum="eea948f764d7c6a07367d9c5ddd4646f" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicNormalise.php.html" role="doc" />
+<file md5sum="778fbe7c6d258556dfb5083fc3b9a694" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicNumbers.php.html" role="doc" />
+<file md5sum="5f443471d0389ab2d99a83519dc001ac" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicQuery.php.html" role="doc" />
+<file md5sum="f1129beb6a5f5be7b7f7ad3b23d05703" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicSalat.php.html" role="doc" />
+<file md5sum="e4d06504b9081fe7f1e69899b96eec29" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicSoundex.php.html" role="doc" />
+<file md5sum="1eaf8e098f834d5df02b5cfaea7dc52c" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicStandard.php.html" role="doc" />
+<file md5sum="e20d8fa6eceb9d1e1329adf9c667dfce" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicStemmer.php.html" role="doc" />
+<file md5sum="32e5a618103c9dd64110f9f8bdcb46c0" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicStrToTime.php.html" role="doc" />
+<file md5sum="cf871cc71b0c29c958149ad10af3b03c" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicTransliteration.php.html" role="doc" />
+<file md5sum="6308391541f99b1db07b87fc154393fd" name="I18N/Arabic/Docs/__filesource/fsource_I18N_Arabic__ArabicWordTag.php.html" role="doc" />
+<file md5sum="91d76fe2bcdf5d48026df22a445e4503" name="I18N/Arabic/Docs/I18N_Arabic/ArabicException.html" role="doc" />
+<file md5sum="475d87d83809115dca609108c0177d16" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic.html" role="doc" />
+<file md5sum="fc5b62897c349bf40f98c132d4522a40" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_AutoSummarize.html" role="doc" />
+<file md5sum="a5e45249185e46033e7e4f39ec8c4209" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_CharsetC.html" role="doc" />
+<file md5sum="08b29c51fb7daf4adf30b5205a04b4c2" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_CharsetD.html" role="doc" />
+<file md5sum="fbf16718632a9bbacc193143309ccb47" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_CompressStr.html" role="doc" />
+<file md5sum="85cdd5f0c1a3c81900d98556d5d97355" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Date.html" role="doc" />
+<file md5sum="494b63f3e465f01a5eb16d18bed1ff9d" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Gender.html" role="doc" />
+<file md5sum="93138e0c1440f8edbc4c41154083c7d8" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Glyphs.html" role="doc" />
+<file md5sum="d94c243acc4cff8ecc53b31fe30884e0" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Hiero.html" role="doc" />
+<file md5sum="9e2d647daabd064e4fb63617d4ae9c83" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Identifier.html" role="doc" />
+<file md5sum="d4da44e3cb437549214d4fed9e8d84f6" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_KeySwap.html" role="doc" />
+<file md5sum="71df81f55c9167d3b420e9106c93c359" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Mktime.html" role="doc" />
+<file md5sum="4b94427695e51ff683065c984b45b107" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Normalise.html" role="doc" />
+<file md5sum="7b44612540dc5a97f0970db271cc6317" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Numbers.html" role="doc" />
+<file md5sum="5b83b9bccdb229031b38fc2935ccf316" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Query.html" role="doc" />
+<file md5sum="93d6f34aae4934fed32a679837fffb09" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Salat.html" role="doc" />
+<file md5sum="1dd4809e90169e52f71d6918bd3e36f3" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Soundex.html" role="doc" />
+<file md5sum="d38455479fc78a3fe62d7755843a6846" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Standard.html" role="doc" />
+<file md5sum="c0c9d832a92b0061b1671041150e9297" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Stemmer.html" role="doc" />
+<file md5sum="1ec6f063951592593a87fc617dd55a20" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_StrToTime.html" role="doc" />
+<file md5sum="1472a3b11e87a12f417d299c0f6a8546" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_Transliteration.html" role="doc" />
+<file md5sum="5e8189276a3cbba6320af260b53a9638" name="I18N/Arabic/Docs/I18N_Arabic/I18N_Arabic_WordTag.html" role="doc" />
+<file md5sum="a26d802ba1c80cd895d329cf16d95f76" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---AutoSummarize.php.html" role="doc" />
+<file md5sum="0503eae64aabf4e3fcfd13d5ba7376ac" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---CharsetC.php.html" role="doc" />
+<file md5sum="5b0e96fdd2b117b44252af996b376b45" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---CharsetD.php.html" role="doc" />
+<file md5sum="065a99be44af8e5f1ca5318829e2af00" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---CompressStr.php.html" role="doc" />
+<file md5sum="996882e98a5d68b09850087b160e739a" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Date.php.html" role="doc" />
+<file md5sum="21866a540846339a2709172b1b4abde0" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Gender.php.html" role="doc" />
+<file md5sum="1d56101fcb14a4a1efc372b5425eb317" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Glyphs.php.html" role="doc" />
+<file md5sum="4bb67bb5d425dee6d42e21c1b34b25e0" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Hiero.php.html" role="doc" />
+<file md5sum="256b052ec898da91168c123980a3fb77" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Identifier.php.html" role="doc" />
+<file md5sum="9e0a32aa67c60db33c7696f019610987" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---KeySwap.php.html" role="doc" />
+<file md5sum="8f6e6118b8c7dc2313fd62addf585512" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Mktime.php.html" role="doc" />
+<file md5sum="9400f366752c83e8d96e75e3b15f1e9b" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Normalise.php.html" role="doc" />
+<file md5sum="152613593e2e0ad344c0f8ddb73cd2b6" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Numbers.php.html" role="doc" />
+<file md5sum="c71c41e4e5a53c476e30ba2180c4059e" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Query.php.html" role="doc" />
+<file md5sum="eabe87ba55de2e67ffbe46b5ec8dbe19" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Salat.php.html" role="doc" />
+<file md5sum="c85d3439e0d3d8b66eb5091bd2a01dc0" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Soundex.php.html" role="doc" />
+<file md5sum="bc57663902d4bbf4038d586a61ac24e2" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Standard.php.html" role="doc" />
+<file md5sum="eb27259cacc910399c5f4fa9968d0f9c" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Stemmer.php.html" role="doc" />
+<file md5sum="d976cb9f54b60d2d1f6f404602307e2e" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---StrToTime.php.html" role="doc" />
+<file md5sum="6595de7fa904b39a9bbfbdf743ed9b4e" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---Transliteration.php.html" role="doc" />
+<file md5sum="5a26a7000e8dcae882c024bad0691324" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic---WordTag.php.html" role="doc" />
+<file md5sum="1b1454788f91cbeaed3da72c2b92e99c" name="I18N/Arabic/Docs/I18N_Arabic/_Arabic.php.html" role="doc" />
+<file md5sum="5189118af3e84698c51db5f8cac5525a" name="I18N/Arabic/Docs/media/background.png" role="data" />
+<file md5sum="4c480a60db1ab64317fe351a24396eb1" name="I18N/Arabic/Docs/media/empty.png" role="data" />
+<file md5sum="1126d7167e0e6295edf9f41c2a522e2b" name="I18N/Arabic/Docs/media/style.css" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <extension>
+    <name>zip</name>
+   </extension>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist />
+ </phprelease>
+</package>
