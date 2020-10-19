@@ -76,6 +76,8 @@ $row=mysql_fetch_array($sql);?>
       <td nowrap style="width:6%;"><strong> الضريبة</strong></td>
       <td nowrap style="width:6%;"><strong>الأجمالي</strong></td>
       <td nowrap style="width:6%;"><strong>شامل الضريبه</strong></td>
+      <td nowrap style="width:6%;"><strong> حذف</strong></td>
+
     </tr>
 		  <?php do { ?>
 
@@ -88,6 +90,9 @@ $row=mysql_fetch_array($sql);?>
       <td><?php $brx= $row['qty']*$row['price']*$row['vat']/100; $brx = sprintf("%01.2f", $brx);  echo $brx;?></td>
       <td><?php $br=$row['qty']*$row['price']; $br = sprintf("%01.2f", $br);  echo $br;?></td>
       <td><?php $br=$row['qty']*$row['price']+$brx; $br = sprintf("%01.2f", $br);  echo $br;?></td>
+
+      <td align="center"><a href="delete.php?action=sales&&idsales=<?php echo $row['transaction_id'];?>" onClick="return confirm('هل تريد حذف <?php echo $row['invoice'];?>');">
+        <button class="btn btn-primary" style="width: 100px; font-family: 'Droid Arabic Kufi';"> حذف <i class="fa fa-times"></i></button></a></td>
         </tr>
 	<?php } while ($row=mysql_fetch_array($sql));?>
 	<tr>

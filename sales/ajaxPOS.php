@@ -106,11 +106,30 @@
 <div id="suggestions" style="position: absolute;top: 44px;width: 100%;" class="list-group"></div>
 </div>
 </td>
-<td style="width: 20%;">
+<!-- <td style="width: 20%;">
 <div class="input-group">
 <input name="customer_name" type="text" placeholder="اسم العميل" id="search_customer" class="form-control" style="font-size: 18px; color:red;">
 <div id="search_customer_list" style="position: absolute;top: 44px;width: 100%; background-color: #0595B7;overflow: hidden;z-index: 100;" class="list-group"></div>
 </div>
+</td> -->
+<td style="width:10%;"> العميل</td>
+
+<td style="width:11%;">
+    <select name="search_customer" class="form-control"  id="search_customer" data-live-search="true" data-style="btn-primary">
+    <?php
+    include('dbcon/dbcon.php');
+    $brim=mysql_query("select * from person limit 30");
+    $resa=mysql_fetch_array($brim);?>
+    <?php 
+    do
+     {
+     ?>
+
+<option value="<?php echo $resa['name'];?>" ><?php echo $resa['name'];?></option>
+
+<?php } while($resa=mysql_fetch_array($brim));?>
+
+</select>
 </td>
 <td style="width:12%;">
 <button onclick="customer()" style=" font-family: 'Droid Arabic Kufi'; font-size:16px; width: 200px; background-color:#0595B7;" class="btn btn-md  btn-rounded"> تسجيل عميل</button>
@@ -208,11 +227,11 @@
                                                     </td>
                                                     <script>
 shortcut.add("HOME",function() {
-	 document.getElementById("add").click();
+   document.getElementById("add").click();
 },{
-	'type':'keydown',
-	'propagate':true,
-	'target':document
+  'type':'keydown',
+  'propagate':true,
+  'target':document
 });</script>
                                                 </tr>
 
@@ -888,7 +907,9 @@ shortcut.add("HOME",function() {
                             var barcode = $("#barcode").val();
                             var invoice_id = $("#invoice_id").val();
 
-                            var search_customer = $('#search_customer').val()
+                            var search_customer = $('#search_customer').val();
+                            console.log("asds" + search_customer);
+
 
                             if (barcode == "") {
                                 alert("عفوا الرجاء كتابه الباركود")
@@ -899,6 +920,7 @@ shortcut.add("HOME",function() {
                                     data: {
                                         'payment': payment,
                                         'sid': barcode,
+                                       
                                         'search_customer': search_customer,
                                         'invoice_id': invoice_id,
                                         'operation': 'add_product',
@@ -908,16 +930,19 @@ shortcut.add("HOME",function() {
                                     },
                                     success: function(resultData) {
                                         // alert(resultData);
-                                        console.log(JSON.parse(resultData));
+                                        // console.log(JSON.parse(resultData));
                                         data = JSON.parse(resultData);
                                         $("#invoice_container").html(data['table'])
                                         $("#barcode").val('');
                                         $("#total").text(data['total']);
                                         $("#vat").text(data['vat']);
 
+                                        
+
                                         $("#sub_total").text(data['sub_total']);
 
                                         $("#tb1").val("");
+
                                         $("#payed").text(0);
                                         $("#update").text(0);
                                     }
@@ -976,6 +1001,8 @@ shortcut.add("HOME",function() {
 
                         var payment = $("#payment").val();
                         var invoice_id = $("#invoice_id").val();
+                        
+                        var search_customer = $('#search_customer').val()
 
                         if (payment == 3) {
                             if (!customerValidation()) {
@@ -991,6 +1018,7 @@ shortcut.add("HOME",function() {
                             data: {
                                 'payment': payment,
                                 'sid': barcode,
+                                'search_customer': search_customer,
                                 'invoice_id': invoice_id,
                                 'operation': 'add_product',
                             },
@@ -1004,6 +1032,7 @@ shortcut.add("HOME",function() {
                                 $("#invoice_container").html(data['table'])
                                 $("#suggestions_value").val('');
                                 $("#total").text(data['total']);
+                                $("#vat").text(data['vat']);
                                 $("#vat").text(data['vat']);
 
                                 $("#sub_total").text(data['sub_total']);

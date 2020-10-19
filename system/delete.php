@@ -1,5 +1,48 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <?php 
+
+
+if(isset($_GET['action']))
+{
+
+  // الاتصال بقاعدة البيانات
+	include('dbcon/config.php');
+  //كود الحذف
+$del=mysql_query("delete from sales where transaction_id ='$_GET[idsales]'");
+if($del)
+{
+  // شرط التحقق
+echo "<script> alert ('تم حذف المستخدم');</script>";
+echo "<meta http-equiv='refresh' content='0;url=salesinfo.php'>";
+}
+else
+{
+echo "<script> alert ('لم يتم حذف المستخدم');</script>";
+echo "<meta http-equiv='refresh' content='0;url=salesinfo.php'>";
+}
+}
+// نهاية الكود البرمجي
+
+if(isset($_GET['share']))
+{
+
+  // الاتصال بقاعدة البيانات
+	include('dbcon/config.php');
+  //كود الحذف
+$del=mysql_query("delete from share where formid ='$_GET[idshare]'");
+if($del)
+{
+  // شرط التحقق
+echo "<script> alert ('تم حذف المستخدم');</script>";
+echo "<meta http-equiv='refresh' content='0;url=shselect3.php'>";
+}
+else
+{
+echo "<script> alert ('لم يتم حذف المستخدم');</script>";
+echo "<meta http-equiv='refresh' content='0;url=shselect3.php'>";
+}
+}
+// 
 //بداية كود حذف سجل من جدول المستخدمين
 if(isset($_GET['id']))
 {

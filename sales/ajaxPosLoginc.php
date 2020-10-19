@@ -20,22 +20,43 @@ if (isset($_POST['operation']) && $_POST['operation'] == "add_product") {
        // $products = mysqli_fetch_array($products_results);
 
     // $customer_id = 0;
-    if (isset($_POST['search_customer'])) {
+    // if (isset($_POST['search_customer'])) {
 
-        $sql = mysqli_query($connect, "select * from customer where name ='" . $_POST['search_customer'] . "'");
-        $customer = mysqli_fetch_array($sql);
+    //     $sql = mysqli_query($connect, "select * from person where name ='" . $_POST['search_customer'] . "'");
+    //     $customer = mysqli_fetch_array($sql);
 
-        $customer_id =   $customer['cid'];
-    } else {
-        $customer_id = 0;
-    }
+    //     $customer_id =   $customer['cid'];
+    // } else {
+    //     $customer_id = 0;
+    // }
 
 
     if ($products['sid'] > 0) {
+        $name = $_POST['search_customer'];
         $sql = "INSERT INTO `sales` (`date`, `datetime`,    `invoice`,           `product`            , `qty`    , `name`                     , `price`,`discount` ,      `category`,             `type`, `user`,   `vat`,       `tell`)
-    VALUES ('" . date("Y-m-d H:i:s") . "','" . date("Y-m-d H:i:s") . "','" . $_POST['invoice_id'] . "', '" . $products['barco'] . "' , '1'  , '" . $products['name'] . "', '" . $products['price'] . "', '0'  ,  '" . $products['unit'] . "' ,  '" . $_POST['payment'] . "'  ,    'المبيعات'  ,  '15'    , '1' )";
-
+    VALUES ('" . date("Y-m-d H:i:s") . "','" . date("Y-m-d H:i:s") . "','" . $_POST['invoice_id'] . "', '" . $products['barco'] . "' , '1'  , '" . $products['name'] . "', '" . $products['price'] . "', '0'  ,  '" . $products['unit'] . "' ,  '" . $_POST['payment'] . "'  , '".$name."' ,   'المبيعات'  ,  '15'     )";
         $result = mysqli_query($connect, $sql);
+
+// $y=date('Y');
+
+
+// $sq33l   =    "INSERT INTO `info`(`id`, `barco`, `formatid`, `item`, `unit`, `qunt`, `price`, `type`, `cust`, `user`, `date`, `dateitem`, `year`, `tax`, `pros`)
+// VALUES ('','" . $products['barco'] . "'
+// ,''
+// ,'" . $products['name'] . "' ,
+// '0'
+// ,'1',
+// '" . $products['price'] . "',
+// '" . $_POST['payment'] . "'
+// ,'ahmed',
+// '10',
+// now(),now(),'$y','15'
+// ,'مبيعات')";
+//                  mysqli_query($connect, $sq33l);
+
+
+                 
+
 
         $qyt =  $products['qunt'] - 1;
         $update_prodect_qyt_sql = "UPDATE `storing` SET `qunt` = '" . $qyt . "' WHERE `storing`.`sid` = " . $products['sid'];

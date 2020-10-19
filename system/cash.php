@@ -52,9 +52,9 @@ include('header.php');?>
 <tr>
       <td style="width:8%;">الدفع</td>
       <td><select name="cash"  class="selectpicker" data-live-search="true" data-style="btn-primary" id="payment_type" required>
-            <option value="نقدا" >نقــــــدا</option>
-            <option value="شبكة" >بنــــكـ</option>
-            <option value="أجل" >أجـــــل</option>
+            <option value="1" >نقــــــدا</option>
+            <option value="2">بنــــكـ</option>
+            <option value="3" >أجـــــل</option>
             </select>
       <td style="width:8%;">من تاريخ</td>
       <td><input type="date"  value="20<?php echo date('y-m-d');?>" name="date1" class="form-control" required autocomplete="off"></td>

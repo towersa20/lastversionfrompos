@@ -142,6 +142,10 @@ echo $x11=$row['sum(price*qty)']*$tax/100;?></td>
 </table>
 <?php } ?>
 
+
+
+
+
 <?php if(isset($_POST['ok2']))
 {?>
 <div id='DivIdToPrint' style="width:98%; font-family: 'Droid Arabic Kufi';" dir="rtl">
@@ -166,7 +170,7 @@ echo $x11=$row['sum(price*qty)']*$tax/100;?></td>
 <table dir="rtl" style="width:100%;" border="1" align="center" class="table table-bordered">
 <?php 
 include('dbcon/dbcon.php');
-$sql=mysql_query("select * from sales where type='$_POST[cash]' and date between '$_POST[date1]' and '$_POST[date2]'");
+$sql=mysql_query("select * from sales where type='$_POST[cash]' and user='$_POST[person]' and date between '$_POST[date1]' and '$_POST[date2]'");
 $row=mysql_fetch_array($sql);
 ?>
 <tr align="center">
@@ -212,28 +216,28 @@ elseif($row['type']==3)
 <td><strong>العدد</strong></td>
 <td><?php 
 include("dbcon/dbcon.php");
-$sql=mysql_query("select count(invoice)from sales where type='$_POST[cash]' and date between '$_POST[date1]' and '$_POST[date2]'");
+$sql=mysql_query("select count(invoice)from sales where type='$_POST[cash]' and user='$_POST[person]' and date between '$_POST[date1]' and '$_POST[date2]'");
 $row=mysql_fetch_array($sql);
 echo $row['count(invoice)'];?></td>
 <td></td>
 <td><?php 
 include("dbcon/dbcon.php");
-$sql=mysql_query("select count(qty)from sales where type='$_POST[cash]' and date between '$_POST[date1]' and '$_POST[date2]'");
+$sql=mysql_query("select count(qty)from sales where type='$_POST[cash]' and user='$_POST[person]' and date between '$_POST[date1]' and '$_POST[date2]'");
 $row=mysql_fetch_array($sql);
 echo $row['count(qty)'];?></td>
 <td><?php 
 include("dbcon/dbcon.php");
-$sql=mysql_query("select count(price)from sales where type='$_POST[cash]' and date between '$_POST[date1]' and '$_POST[date2]'");
+$sql=mysql_query("select count(price)from sales where type='$_POST[cash]' and user='$_POST[person]' and date between '$_POST[date1]' and '$_POST[date2]'");
 $row=mysql_fetch_array($sql);
 echo $row['count(price)'];?></td>
 <td><?php 
 include('dbcon/dbcon.php');
-$sql=mysql_query("select sum(price*qty) from sales where type='$_POST[cash]' and date between '$_POST[date1]' and '$_POST[date2]'");
+$sql=mysql_query("select sum(price*qty) from sales where type='$_POST[cash]' and user='$_POST[person]' and date between '$_POST[date1]' and '$_POST[date2]'");
 $row=mysql_fetch_array($sql);
 echo $x22=$row['sum(price*qty)'];?></td>
 <td><?php 
 include('dbcon/dbcon.php');
-$sql=mysql_query("select sum(price*qty) from sales where type='$_POST[cash]' and date between '$_POST[date1]' and '$_POST[date2]'");
+$sql=mysql_query("select sum(price*qty) from sales where type='$_POST[cash]' and user='$_POST[person]' and date between '$_POST[date1]' and '$_POST[date2]'");
 $row=mysql_fetch_array($sql);
 echo $x11=$row['sum(price*qty)']*$tax/100;?></td>
 <td><?php echo $x11+$x22;?></td>

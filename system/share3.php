@@ -90,6 +90,8 @@ $row=mysql_fetch_array($sql);?>
       <td nowrap style="width:7%;"><strong>شامل الضريبة</strong></td>
       <td nowrap style="width:7%;"><strong>الربح المتوقع</strong></td>
       <td nowrap style="width:7%;"><strong>التاريخ</strong></td>
+      <td nowrap style="width:7%;"><strong>حذف </strong></td>
+
     </tr>
 		  <?php do { ?>
 
@@ -113,6 +115,11 @@ $row=mysql_fetch_array($sql);?>
       <td><?php  $br=$x2-$z1; 
   $br = sprintf("%01.2f", $br);  echo $br;?></td>
 	  <td nowrap><?php echo $row['date'];?></td>
+
+
+    <td align="center"><a href="delete.php?share=sales&&idshare=<?php echo $row['formid'];?>" onClick="return confirm('هل تريد حذف <?php echo $row['formid'];?>');">
+        <button class="btn btn-primary" style="width: 100px; font-family: 'Droid Arabic Kufi';"> حذف <i class="fa fa-times"></i></button></a></td>
+       
    </tr>
 
 	<?php } while ($row=mysql_fetch_array($sql));?>

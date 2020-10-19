@@ -18,13 +18,20 @@ span { font-size: 13px;}
 <table >
 	<tr><td>	<?php
 		include 'barcode128.php';
+
+		require "vendor/autoload.php";
+
 		$product = $_POST['product'];
 		$product_id = $_POST['product_id'];
 //		$rate = $_POST['rate'];
+$Bar = new Picqer\Barcode\BarcodeGeneratorHTML();
 
-		for($i=1;$i<=$_POST['print_qty'];$i++){
-			echo "<strong style='font-size: 30px;'>".bar128(stripcslashes($_POST['product_id']))."</strong><br>";
-		}
+$code = $Bar->getBarcode($_POST['product_id'], $Bar::TYPE_CODE_128);
+
+
+			echo "$code";
+
+		
 
 		?></td></tr>
 		</table>
