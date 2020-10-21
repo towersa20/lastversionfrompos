@@ -87,7 +87,7 @@ if (isset($_POST['operation']) && $_POST['operation'] == "add_product") {
         $sub_total +=  round(($row['price'] * $row['sum(qty)']), 2);
         $table .= '<tr align="center">
                         <td style="width:25%;">' . $row['name'] . '</td>
-                        <td style="width:15%;">' . $row['category'] . '</td>
+                        add_product <td style="width:15%;">' . $row['category'] . '</td>
                         <td style="width:10%;"><i style="color:green;" class=" fas fa-plus" onclick=javascript:add_product(' . $row["product"] . ');></i> ' . $row['sum(qty)'] . ' <i  style="color:red;" class=" fas fa-minus" onclick=javascript:decrease(' . $row["product"] . ');></i></td>
                         <td style="width:10%;">' . $row['price'] . '</td>
                         <td style="width:10%;">' . round(($row['price'] * $row['sum(qty)']), 2) . '</td>

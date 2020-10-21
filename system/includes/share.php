@@ -7,6 +7,8 @@ include_once("user.php");
 include_once("DBOperation.php");
 include_once("manage.php");
 
+$a = mt_rand(100000,999999); 
+
 //----------------products---------------------
 
 if (isset($_POST["manageProduct"])) {
@@ -100,7 +102,7 @@ while ($row2 = mysqli_fetch_array($result2)) {
 
 
 
-				<input type="text" name="pid[]" autofocus title="barcode" placeholder="barcode" class="form-control pid" autofocus required id="search" placeholder="باركود" list="searchrxt" autocomplete="off">
+				<input type="text" name="pid[]" autofocus title="barcode" value="<?php echo $a ; ?>"  placeholder="barcode" class="form-control pid" autofocus required id="search" placeholder="باركود" list="searchrxt" autocomplete="off">
 	<datalist id="searchrxt">
 	<?php while ($row1 = mysqli_fetch_array($result1)):; ?>
         <option value="<?php echo $row1[1]; ?>"><?php echo $row1[2]; ?>        </option>

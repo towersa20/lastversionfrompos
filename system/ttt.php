@@ -1,3 +1,7 @@
+<?php 
+$a = mt_rand(100000,999999); 
+?>
+
 <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
        <script type="text/javascript" src="js/order.js"></script>
@@ -26,7 +30,7 @@
 </td>
 
 <input type="hidden" id="order_date" name="order_date"  class="form-control" value="<?php echo date("Y-d-m"); ?>">
-<td style="width:20%;"><input name="CODE" required  class="form-control" type="text" size="12" id="CODE" value="<?php echo $_SESSION['SESS_MEMBER_ID']; ?>"  /></td>
+<td style="width:20%;"><input name="CODE" required  class="form-control" type="text" size="12" id="CODE" value="<?php echo $a ; ?>"  /></td>
 <td style="width:20%;"><input name="datefrom"  class="form-control" type="date" size="12" value="20<?php echo date('y-m-d');?>" required  /></td>
 <td style="width:20%;">
 <select name="stores" class="selectpicker" data-live-search="true" data-style="btn-primary">
